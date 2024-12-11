@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*Contact section*/
+.contact-container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 40px 100px 40px 100px;
+}
+.ct-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Poppins', serif;
+}
+.form-card, .info-card {
+    border: 1px solid #efdde1;
+    border-radius: 8px;
+    background-color: #fcfafa;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+.form-card h4, .info-card h4 {
+    font-weight: bold;
+    font-family: 'Quicksand', serif;
+    margin-bottom: 15px;
+    color: #1e0701;
+}
+.form-control {
+    background-color: #ffeee3;
+    font-family: 'Teachers', serif;
+}
+.form-group {
+     margin-bottom: 1px; 
+}
+textarea.form-control {
+    height: auto;
+    resize: none;
+}
+.btn-primary {
+    background-color: #9B3268;
+    border-color: #9B3268;
+    border-radius: 30px;
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: #e67a8e;
+    border-color: #e67a8e;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #5a3e36;
+    font-size: 24px;
+}
+ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+#thankYouMessage {
+    display:none; /* Initially hidden */
+}

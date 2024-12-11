@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/*Feedback*/
+.testimonial-container {
+    width: 100%;
+    padding: 30px 100px 30px 100px;
+    margin: 50px 0 50px 0;
+    text-align: center;
+}
+.testimonial-item {
+    width: 100%;
+    height: fit-content;
+    padding: 30px 120px 20px 120px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+.testimonial-item.show {
+    opacity: 1;
+    transform: scale(1);
+}
+.testimonial-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    
+}
+.testimonial-container h2 {
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    color: #053b47;
+    margin-bottom: 10px;
+}
+.testimonial-container p {
+    font-family: 'Teachers', serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.stars {
+    margin-top: 10px;
+    color: #ffbb33;
+}
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(1);
+}
+
+/*FAQ*/
+.faq-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 50px 100px 50px 100px;
+    margin: auto;
+}
+.faq-title {
+    color: #053B47;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 10px;
+}
+.accordion-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #636f7a;
+    padding: 18px 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.accordion-button:hover {
+    background-color: #f2f2f2;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #721830;
+    color: white;
+    border-color: #08414e;
+}
+.accordion-item {
+    margin-bottom: 8px;
+    border: none;
+}
+.accordion-body {
+    background-color: #f9f9f9;
+    padding: 18px;
+    font-size: 1rem;
+    color: #555;
+    border-radius: 10px;
+    border-top: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+.accordion-button::after {
+    content: '';
+    font-family: FontAwesome;
+    font-size: 18px;
+}
+.accordion-button:not(.collapsed)::after {
+    content: '';
+}
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+.faq-img {
+    border-radius: 6px;
+}
+
+/*Posting section*/
+.post-container {
+    width: 100%;
+    margin: 50px 0 30px 0;
+    padding: 50px 100px 30px 100px;
+    text-align: center;
+    font-family: 'Quicksand', serif;
+}
+.post-container h2 {
+    font-family: 'Poppins', serif;
+    color: #1d3557;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#upload-btn {
+    width: 170px;
+    background-color: #9b3268;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#upload-btn:hover {
+    background-color: #e67a8e;
+}
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.post-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+.post-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.btn-action {
+    margin-right: 5px;
+    border: 0;
+}
+.modal .btn {
+    outline: none;
+}
+
+/*Helpline section style*/
+.support-container {
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+}
+.section-title {
+    font-family: 'Poppins', serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #053B47;
+    margin-bottom: 30px;
+}
+.helpline-content {
+    font-family: "Quicksand", serif;
+    font-weight: 500;
+    border-left: 5px solid #9b3268;
+    padding: 15px;
+    border-radius: 5px;
+}
+.resource-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+.resource-card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.forum-card {
+    border-left: 5px solid #9b3268;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.btn-custom {
+    background-color: #9b3268;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn-custom:hover {
+    background-color: #e67a8e;
+}

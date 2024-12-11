@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | SHE RAISES</title>
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!--Boostrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Teachers&display=swap" rel="stylesheet">
+    
+    <!--External CSS-->
+    <link rel="stylesheet" href="navfooter.css">
+    <link rel="stylesheet" href="support.css">
+    
+</head>
+<body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!-- navbar brand as text -->
+         <a href="index.html" class="navbar-brand p-0 m-0">
+            <img src="images/logo__1_-removebg-preview.png" width="70px" height="70px" alt="">
+            <span class="navbar-text">SHE RAISES</span>
+        </a>
+        
+         
+         <!-- toggler button -->
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav_id" >
+            <i class="bi bi-justify"></i>
+        </button>
+       
+         <!-- nav items container -->
+          <div class="collapse navbar-collapse ms-auto" id="nav_id">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="awareness_hub.html" class="nav-link">Awareness Hub</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="s_e.html" class="nav-link">S.E</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item register"><a href="#register_modal" data-bs-toggle="modal" class="nav-link">Register</a></li>
+                <li class="nav-item login"><a href="#login_modal" data-bs-toggle="modal" class="nav-link">Login</a></li>
+            </ul>
+          </div>      
+    </nav>
+    <div class="navcontent-box text-center w-100 pt-4 pb-3" style="background-color: rgba(207, 207, 209, 0.564);">
+        <h6 style="color: gray; ">Support // Lady's Zone</h6>
+    </div>
+
+    <!--Login Modal-->
+    <div class="modal " id="login_modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                     
+                        <input type="text" id="lusername" placeholder="Username" required />
+                        <input type="password" id="lpassword" placeholder="Password" required />
+                        <button type="submit">Login</button>
+                        &nbsp;<a href="#register_modal" data-dismiss="modal" data-bs-toggle="modal">Go to Register</a>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Register Modal -->
+    <div class="modal " id="register_modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h3 class="modal-title">Register</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                       
+                        <input type="text" id="name" placeholder="Name" required />
+                        <input type="text" id="rusername" placeholder="Username" required />
+                        <input type="password" id="rpassword" placeholder="Password" required />
+                        <input
+                          type="password"
+                          id="confirmPassword"
+                          placeholder="Confirm Password"
+                          required
+                        />
+                        <button type="submit">Register</button>
+                        &nbsp;<a href="#login_modal" data-dismiss="modal" data-bs-toggle="modal">Go to Login</a>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Feedback section start-->
+    <section class="testimonial-container bg-light">
+        <h2>What Our Users Say</h2>
+        <p>Empowering Women Through Feedback</p>
+
+        <!-- Carousel slide-->
+        <div id="testimonialCarousel" class=" carousel slide" data-bs-ride="carousel">
+            <div class=" carousel-inner" id="testimonialCarouselItems"></div>
+            <!-- Carousel controls button-arrow-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--FAQ section start-->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="row">
+                <div class="col-md-6 p-5">
+                    <h3 class="faq-title">Frequently Asked Questions</h3>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" >
+                                    Are there opportunities to network with other women?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We have online networking events, discussion forums, and social groups where you can connect with like-minded women to share experiences and build relationships.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    How can I become a mentor or volunteer?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    If you're interested in becoming a mentor or volunteer, you can visit our "Get Involved" section. Fill out the application form, and our team will get in touch with you.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Is there a membership fee?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    No, membership is free! Our goal is to empower and uplift women from all backgrounds, so we offer our resources without any charges.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5">
+                    <img src="images/bg-pfs.jpg" width="100%" class="faq-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Posting section start-->
+    <section class="post-container bg-light">
+        <div class="row p-0 m-0 justify-content-center">
+            <h2>Share Your Thoughts Lady</h2>
+            <button type="button" id="upload-btn" data-bs-toggle="modal" data-bs-target="#postModal">
+                Upload Post
+            </button>
+            <h5 class="mt-3 fw-700">Let Us Know You!</h5>
+        </div>
+
+        <!-- Post Modal -->
+        <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="postModalLabel">Create a Post</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="postForm">
+                            <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Title">
+                            <textarea class="form-control" id="postText" rows="5" placeholder="What's on your mind?"></textarea>
+                            </div>
+                            <div class="mb-3">
+                            <label for="postImage" class="form-label">Upload Image</label>
+                            <input type="file" class="form-control" id="postImage" accept="image/*">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="submitPost">Post</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Post Display Area -->
+        <div class="container mt-4 p-3" id="post-area"></div>
+    </section>
+
+    <br>
+    <!--Support text section-->
+    <div class="support-container">
+        <!-- Helplines Section -->
+        <section class="helpline-section p-5">
+            <h2 class="section-title">Helplines and Emergency Support</h2>
+            <div class="helpline-content">
+                <p><strong>Domestic Violence Hotline:</strong> 1-800-799-SAFE (7233)</p>
+                <p><strong>Sexual Assault Helpline:</strong> 1-800-656-HOPE (4673)</p>
+                <p><strong>Mental Health Support:</strong> 1-800-273-TALK (8255)</p>
+                <p><strong>Women’s Rights Hotline:</strong> +95 974 551 832</p>
+                <a href="#" class="btn helpline-btn">Get Immediate Help</a>    
+            </div>
+        </section> 
+        <br><br>
+    
+        <!-- Education and Career Resources -->
+        <section class="resources p-5">
+          <h2 class="section-title">Educational and Career Resources</h2>
+          <div class="row g-3">
+            <!-- Resource 1 -->
+            <div class="col-md-6">
+              <div class="resource-card p-3">
+                <h5>Scholarships for Women</h5>
+                <p>Explore funding opportunities for higher education.</p>
+                <a href="#" class="btn btn-custom">Learn More</a>
+              </div>
+            </div>
+            <!-- Resource 2 -->
+            <div class="col-md-6">
+              <div class="resource-card p-3">
+                <h5>Skill Development Courses</h5>
+                <p>Learn essential skills like coding, business, and leadership.</p>
+                <a href="#" class="btn btn-custom">Explore Courses</a>
+              </div>
+            </div>
+            <!-- Resource 3 -->
+            <div class="col-md-6">
+              <div class="resource-card p-3">
+                <h5>Mentorship Programs</h5>
+                <p>Connect with professionals for career guidance.</p>
+                <a href="#" class="btn btn-custom">Join a Program</a>
+              </div>
+            </div>
+            <!-- Resource 4 -->
+            <div class="col-md-6">
+              <div class="resource-card p-3">
+                <h5>Resume Writing Tips</h5>
+                <p>Improve your resume and boost your job prospects.</p>
+                <a href="#" class="btn btn-custom">Get Tips</a>
+              </div>
+            </div>
+          </div>
+        </section> 
+        <br><br>
+    
+        <!-- Community related groups -->
+        <section class="forums p-5">
+          <h2 class="section-title">Community Related Groups</h2>
+          <div class="forum-card bg-light">
+            <h5>Women's Leadership Group</h5>
+            <p>Join a group of ambitious women to share ideas and grow together.</p>
+          </div>
+          <div class="forum-card">
+            <h5>Single Mothers Support</h5>
+            <p>Connect with single mothers for advice, support, and friendship.</p>
+            
+          </div>
+          <div class="forum-card">
+            <h5>Entrepreneurship Hub</h5>
+            <p>Discuss business ideas, collaborate, and find resources for startups.</p>
+          </div>
+        </section>
+    </div>
+
+    <!--Footer start-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <a href="index.html">
+                        <img src="images/logo__1_-removebg-preview.png" alt="Logo" width="70px" height="70px">
+                    </a>
+                    <h4 class="mt-3"><b>Women Empowerment</b></h4>
+                    <p>Email: sheraises@all.gmail.com</p>
+                    <p>Tel: +95 962 342 751</p>
+                    <div class="mt-3" id="iconbox">
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Support Links -->
+                <div class="col-md-2">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled footerlink">
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="awareness_hub.html" class="nav-link">Latest Blog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footerlink">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="awareness_hub.html" class="nav-link">Awareness Hub</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="s_e.html" class="nav-link">S.E</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Resource</a></li>
+                    </ul>
+                </div>
+                <!-- Policies -->
+                <div class="col-md-3">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled footerlink">
+                        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Terms of Use</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Women Empowerment Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Social Support</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Community Support</a></li>
+                    </ul>
+                </div>
+                <!-- Action -->
+                <div class="col-md-2">
+                    <h5>Action</h5>
+                    <ul class="list-unstyled footerlink">
+                        <button type="button" class="nav-item btn mt-2"><a href="#" class="nav-link">Share Your Story</a></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright w-100 mt-3">
+        <p class="text-center">©Copyright 2024 | All Rights Reserved by SHE RAISES. Women Empowerment</p>
+    </div>
+
+    <script>
+      //  localStorage.clear();
+    </script>
+    <script src="script_login.js"></script>
+    <script src="script_register.js"></script>
+    <script src="support.js"></script>
+</body>
+</html>

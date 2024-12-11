@@ -1,0 +1,78 @@
+.header {
+  text-align: center;
+  margin-top: 80px;
+  color: #e4556f;
+}
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Poppins',serif;
+}
+.ctg-btn {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+.ctg-btn button {
+  background-color: #e67a8e;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.ctg-btn button.active {
+  background-color: #9B3268;
+}
+.section-container {
+  margin-top: 40px;
+}
+.section-header {
+  margin: 8% 4% 4% 4%;
+}
+.section-h-title {
+  font-family: 'Poppins', serif;
+  color: #053b47;
+}
+.section-h-text {
+  font-family: 'Quicksand', serif;
+}
+.movie-card,  .mg-card, .eb-card{
+  margin: 30px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: ghostwhite;
+  padding: 30px 13px 10px 13px;
+}
+.mg-card img {
+  border-radius: 6px;
+  height: 300px;
+  width: 65%;
+  object-fit: cover;
+}
+.movie-card img {
+  border-radius: 4px;
+  height: 320px;
+  width: 65%;
+  object-fit: cover;
+}
+.eb-card img {
+  border-radius: 6px;
+  height: 300px;
+  width: 65%;
+  object-fit: cover;
+}
+.vl-title-link {
+  margin-top: 20px;
+}
+.vl-title-link a {
+    color: #d54062;
+    text-decoration: none;
+    font-family: 'Poppins', serif;
+}
+.movie-card p, .mg-card p, .eb-card p {
+  font-size: 0.9rem;
+  font-family: 'Teachers', serif;
+}

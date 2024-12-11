@@ -1,0 +1,369 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Awareness Hub | SHE RAISES</title>  
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <!--Boostrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Teachers&display=swap" rel="stylesheet">
+    <!--External CSS-->
+    <link rel="stylesheet" href="navfooter.css">
+    <link rel="stylesheet" href="awareness_hub.css">
+    
+</head>
+<body>
+    <!--nav start-->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <!-- navbar brand as text -->
+         <a href="index.html" class="navbar-brand p-0 m-0">
+            <img src="images/logo__1_-removebg-preview.png" width="70px" height="70px" alt="">
+            <span class="navbar-text">SHE RAISES</span>
+        </a>
+        
+         
+         <!-- toggler button -->
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav_id" >
+            <i class="bi bi-justify"></i>
+        </button>
+       
+         <!-- nav items container -->
+          <div class="collapse navbar-collapse ms-auto" id="nav_id">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="awareness_hub.html" class="nav-link">Awareness Hub</a></li>
+                <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                <li class="nav-item"><a href="s_e.html" class="nav-link">S.E</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item register"><a href="#register_modal" data-bs-toggle="modal" class="nav-link">Register</a></li>
+                <li class="nav-item login"><a href="#login_modal" data-bs-toggle="modal" class="nav-link">Login</a></li>
+            </ul>
+          </div>      
+    </nav>
+
+    <!--Login Modal-->
+    <div class="modal " id="login_modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                     
+                        <input type="text" id="lusername" placeholder="Username" required />
+                        <input type="password" id="lpassword" placeholder="Password" required />
+                        <button type="submit">Login</button>
+                        &nbsp;<a href="#register_modal" data-dismiss="modal" data-bs-toggle="modal">Go to Register</a>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Register Modal -->
+    <div class="modal " id="register_modal" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog  modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content bg-light">
+                <div class="modal-header">
+                    <h3 class="modal-title">Register</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                       
+                        <input type="text" id="name" placeholder="Name" required />
+                        <input type="text" id="rusername" placeholder="Username" required />
+                        <input type="password" id="rpassword" placeholder="Password" required />
+                        <input
+                          type="password"
+                          id="confirmPassword"
+                          placeholder="Confirm Password"
+                          required
+                        />
+                        <button type="submit">Register</button>
+                        &nbsp;<a href="#login_modal" data-dismiss="modal" data-bs-toggle="modal">Go to Login</a>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Header section-->
+    <section class="header-section w-100">
+        <div class="navcontent-box text-center w-100 pt-4 pb-3" style="background-color: rgba(207, 207, 209, 0.564);">
+            <h6 style="color: ghostwhite; ">Awareness Hub // Articles & Blogs</h6>
+        </div>
+        <div class="header-container text-center">
+            <h1>Awareness Hub</h1>
+            <p>Empowering voices, inspiring change. Together, we build a brighter future by fostering connection, support, and growth.</p>
+        </div>
+    </section> 
+
+    <!--Article section-->
+    <section class="article-section w-100">
+        <div class="article-container"> 
+            <!--Introduction row-->
+            <div class="row article-intro-row">
+                <div class="col-md-5 pe-4 mt-4">
+                    <div class="article-intro-q bg-light">
+                        <div class="text-primary mb-1">
+                            <svg class="bi bi-quote" style="color: pink;" fill="currentColor" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"></path></svg>
+                        </div>
+                        <p style="font-family: 'Dancing Script', serif;
+                                  font-size: 28px;
+                                  padding-left: 15px;">Quality is not an act, it is a habit.</p>
+                        <h5 class="text-end fw-bold">-Aristotle</h5>
+                    </div>
+                </div>
+                <div class="col-md-7 card article-intro-card ps-4 mt-4">
+                    <div class="card-body article-intro-text bg-light">
+                        <div class="d-flex">
+                            <div class="card-text-ct">
+                                <h4 class="card-title" style="font-family: 'Poppins', serif; color: #7f1330; margin-bottom: 20px;">Improve yourself!</h4>
+                                <p class="card-text">Knowledge is a basic weapon for making changes. The Awareness Hub seeks to inform, inspire, and empower women by sharing thoughts on a range of 
+                                    topics, such as education, mental health, climate action, and more. Explore now.
+                                </p>
+                            </div>
+                            <div class="pt-5 ps-4">
+                                <span class="article-intro-icon"><i class="bi bi-graph-up"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!--Article row-->
+            <div class="row mt-5 mb-5">
+                <h3 style="margin: 5% 0 5% 0;
+                           font-family: 'Poppins', serif;
+                           color: #053b47;
+                            text-decoration: underline 1.1px;
+                            text-decoration-color: rgb(192, 191, 191);
+                            text-underline-offset: 12px;">December 
+                    <span style="color: #7f1330;">'Articles</span>
+                </h3>
+                <!-- Article cards -->
+                <div class="col-md-9 pe-5">
+                    <!-- Article 1 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-1.png) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Empowering Women Through Education: Why It Matters</h5>
+                            <input type="checkbox" id="toggle1">
+                            <p class="card-text">
+                                Education is one of the most transformative tools for empowering women and breaking the cycle of poverty. Studies have shown that each additional year of schooling can increase a girl's future earnings by 10-20%, creating a ripple effect that benefits entire communities. Educated women are more likely to advocate for their children's education and healthcare, fostering intergenerational progress. However, millions of girls worldwide face barriers like poverty, child marriage, and cultural norms that prioritize boys' education. Initiatives such as the Malala Fund and Room to Read have demonstrated the potential of targeted efforts, enabling girls to access secondary education in underserved regions. By investing in girls' education, societies not only uplift individuals but also unlock greater economic and social progress, proving that education truly is the foundation for equality and empowerment.
+                            </p>
+                            <label for="toggle1" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                    <!-- Article 2 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-2.jpg) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Financial Independence: A Key to Women's Empowerment</h5>
+                            <input type="checkbox" id="toggle2">
+                            <p class="card-text">
+                                Financial independence is the cornerstone of women’s empowerment, granting them the freedom to make decisions and shape their futures. Yet, many women face systemic barriers such as wage gaps, limited access to credit, and underrepresentation in financial decision-making. The gender pay gap persists globally, with women earning only 77% of what men earn for the same roles. Initiatives like Grameen Bank’s microfinance loans have empowered women in rural areas to start businesses and achieve self-sufficiency. Similarly, platforms like SheEO have revolutionized crowdfunding by connecting women entrepreneurs with supportive communities. By equipping women with financial literacy and resources, society can foster a culture where women are not only contributors to the economy but also its leaders and innovators.
+                            </p>
+                            <label for="toggle2" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                    <!-- Article 3 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-3.jpg) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Mental Health Matters: Overcoming the Stigma</h5>
+                            <input type="checkbox" id="toggle3">
+                            <p class="card-text">
+                                Mental health is an essential component of overall well-being, yet it remains deeply stigmatized, particularly for women. Globally, women are more likely to face anxiety, depression, and PTSD, often stemming from societal pressures, work-life imbalances, and experiences of abuse. Despite these challenges, many hesitate to seek help due to fear of judgment or misunderstanding. For instance, postpartum depression affects one in seven new mothers but is frequently dismissed as a temporary phase. Breaking this stigma requires collective effort—educating communities, normalizing therapy, and providing accessible resources. Organizations like RAINN and mental health apps like BetterHelp offer platforms for support and healing. As society progresses, it must ensure mental health is treated with the same seriousness as physical health, fostering a culture where seeking help is seen as a strength rather than a weakness.
+                            </p>
+                            <label for="toggle3" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                    <!-- Article 4 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-4.png) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Health and Wellness: A Comprehensive Approach for Women</h5>
+                            <input type="checkbox" id="toggle6">
+                            <p class="card-text">
+                                Women's health is multifaceted, encompassing both physical and mental well-being. From reproductive health to mental resilience, maintaining wellness requires a comprehensive approach that considers all aspects of life. Regular physical activity, a balanced diet, and sufficient sleep form the foundation of good health. For women, it's also important to pay attention to issues like menstrual health, menopause, and osteoporosis. However, women’s health often faces underrepresentation in medical research and healthcare discussions. This can lead to a lack of understanding and inadequate healthcare solutions. By promoting awareness, encouraging self-care, and supporting advocacy for better healthcare policies, women can lead healthier lives. Additionally, engaging in open conversations about mental health, including stress management and coping strategies, helps to reduce stigma and provides crucial support systems.
+                            </p>
+                            <label for="toggle6" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                    <!-- Article 5 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-5.jpg) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Balancing It All: Strategies for Managing Work, Life, and Passion</h5>
+                            <input type="checkbox" id="toggle4">
+                            <p class="card-text">
+                                In today’s fast-paced world, many women find themselves stretched thin while trying to balance work, family, and personal interests. The pressure to excel in all areas can lead to stress and exhaustion, making it essential to find strategies for harmony. Time management is the foundation of work-life balance. Prioritize tasks using tools like planners or digital apps. Break your day into manageable segments, dedicating focused time to work, family, and hobbies. Another key strategy is delegation. At work, don’t hesitate to seek support from colleagues, and at home, share responsibilities with your partner or family. Recognize that asking for help is a sign of strength, not weakness. Equally important is self-care. Regular exercise, mindfulness practices, and hobbies rejuvenate your mind and body. By nurturing yourself, you’re better equipped to handle challenges in all aspects of life. Balance isn’t about perfection; it’s about finding what works for you and adapting as needed.
+                            </p>
+                            <label for="toggle4" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                    <!-- Article 6 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-6.jpeg) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">Breaking Stereotypes: Women in Leadership</h5>
+                            <input type="checkbox" id="toggle5">
+                            <p class="card-text">
+                                Women in leadership roles continue to face significant challenges, despite substantial progress toward gender equality. In corporate boardrooms, politics, and even family-run businesses, women often encounter bias and skepticism about their leadership capabilities. Research shows that organizations with more women in leadership positions perform better and foster more inclusive work environments. However, gender stereotypes and the “glass ceiling” continue to limit opportunities for women. Women are often expected to prove their competence more than men, facing questions about their emotional stability, decision-making, and ability to manage authority. Changing the narrative around women in leadership requires both individual and collective effort. Companies must actively recruit and promote women, and society must support women’s ambitions through mentorship, equal opportunities, and by challenging entrenched biases.
+                            </p>
+                            <label for="toggle5" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                    <!-- Article 7 -->
+                    <div class="card article-card mb-5">
+                        <div class="card-img-top" style="background: url(images/awh-at-img-7.jpg) no-repeat center; background-size: cover; height: 230px;"></div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title">The Power of Networking: How Women Can Build Supportive Communities</h5>
+                            <input type="checkbox" id="toggle7">
+                            <p class="card-text">
+                                Networking is a vital tool for career development, personal growth, and social empowerment, especially for women who face unique challenges in professional and personal settings. Building a supportive community of women allows individuals to share resources, advice, and opportunities that might otherwise be unavailable. Women’s networks, such as Lean In Circles and the Women’s Business Collaborative, provide spaces for mentorship and guidance. The benefits of networking go beyond job prospects; they foster confidence, build leadership skills, and create lasting friendships. However, for women to maximize the power of networking, it’s essential to approach it strategically. This means prioritizing genuine connections, supporting each other, and leveraging both online and in-person opportunities. Networking is not just about taking—it’s about giving, creating a reciprocal ecosystem that benefits all involved.
+                            </p>
+                            <label for="toggle7" class="read-more">Read More</label>
+                        </div>
+                    </div>
+    
+                </div>
+                
+                <!-- Sidebar-->
+                <div class="col-md-3 ps-4">
+                    <aside class="sidebar p-5 bg-light" style="box-shadow: 4px 3px 20px rgb(231, 230, 230);">
+                        <h3 class="sb-title mb-3">Category</h3>
+                        <ul class="sb-list">
+                            <li>General</li>
+                            <li>Lifestyle</li>
+                            <li>Improvements</li>
+                            <li>Education</li>
+                            <li>Empowerments</li>
+                        </ul>
+                        <h3 class="sb-title mb-3 mt-5">Recent Posts</h3>
+                        <ul class="sb-list">
+                            <li>Education Matters</li>
+                            <li>Financial Key</li>
+                            <li>Mental Health</li>
+                            <li>Health & Wellness</li>
+                            <li>Balance Strategies</li>
+                            <li>Stereotypes</li>
+                            <li>Power of Networking</li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+
+            <!--Closing row-->
+            <div class="row mt-5 text-center">
+                <br> <br><hr> <br>
+                <h3 class="article-cl-text">
+                    <span class="article-cl-icon"><i class="bi bi-megaphone"></i></span>
+                    Latest Upload Once A Month
+                </h3>
+            </div>  
+        </div> 
+    </section>
+    
+    <!--Footer start-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <a href="index.html">
+                        <img src="images/logo__1_-removebg-preview.png" alt="Logo" width="70px" height="70px">
+                    </a>
+                    <h4 class="mt-3"><b>Women Empowerment</b></h4>
+                    <p>Email: sheraises@all.gmail.com</p>
+                    <p>Tel: +95 962 342 751</p>
+                    <div class="mt-3" id="iconbox">
+                        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Support Links -->
+                <div class="col-md-2">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled footerlink">
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="awareness_hub.html" class="nav-link">Latest Blog</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-2">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footerlink">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="awareness_hub.html" class="nav-link">Awareness Hub</a></li>
+                        <li class="nav-item"><a href="support.html" class="nav-link">Support</a></li>
+                        <li class="nav-item"><a href="s_e.html" class="nav-link">S.E</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Resource</a></li>
+                    </ul>
+                </div>
+                <!-- Policies -->
+                <div class="col-md-3">
+                    <h5>Policies</h5>
+                    <ul class="list-unstyled footerlink">
+                        <li class="nav-item"><a href="#" class="nav-link">Privacy Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Terms of Use</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Women Empowerment Policy</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Social Support</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Community Support</a></li>
+                    </ul>
+                </div>
+                <!-- Action -->
+                <div class="col-md-2">
+                    <h5>Action</h5>
+                    <ul class="list-unstyled footerlink">
+                        <button type="button" class="nav-item btn mt-2"><a href="#" class="nav-link">Share Your Story</a></button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright w-100 mt-3">
+        <p class="text-center">©Copyright 2024 | All Rights Reserved by SHE RAISES. Women Empowerment</p>
+    </div>
+
+    <script>
+      //  localStorage.clear();
+    </script>
+    <script src="script_login.js"></script>
+    <script src="script_register.js"></script>
+</body>  
+</html>
